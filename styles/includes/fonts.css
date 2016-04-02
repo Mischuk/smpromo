@@ -1,0 +1,53 @@
+/* Semibold */
+@font-face {
+  font-family: 'UniSansSemiBold';
+  src: url('../fonts/UniSansSemiBold.woff') format('woff'),
+       url('../fonts/UniSansSemiBold.ttf') format('truetype'),
+       url('../fonts/UniSansSemiBold.svg#UniSansSemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Book */
+@font-face {
+  font-family: 'UniSansBook';
+  src: url('../fonts/UniSansBook.woff') format('woff'),
+       url('../fonts/UniSansBook.ttf') format('truetype'),
+       url('../fonts/UniSansBook.svg#UniSansBook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Heavy */
+@font-face {
+  font-family: 'UniSansHeavy';
+  src: url('../fonts/UniSansHeavy.woff') format('woff'),
+       url('../fonts/UniSansHeavy.ttf') format('truetype'),
+       url('../fonts/UniSansHeavy.svg#UniSansHeavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'UniSansBold';
+  src: url('../fonts/UniSansBold.woff') format('woff'),
+       url('../fonts/UniSansBold.ttf') format('truetype'),
+       url('../fonts/UniSansBold.svg#UniSansBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'UniSansRegular';
+  src: url('../fonts/UniSansRegular.woff') format('woff'),
+       url('../fonts/UniSansRegular.ttf') format('truetype'),
+       url('../fonts/UniSansRegular.svg#UniSansRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+

@@ -1,0 +1,52 @@
+/*! Base styles */
+html, body
+  regular()
+  height 100%
+  background #f7f7f7
+  @media screen and (min-width: 975px)
+    min-width $min-width
+    // background none
+    height auto
+body
+  position relative
+  @media screen and (min-width: 975px)
+    &:before
+      content ""
+      position absolute
+      left 50%
+      top 0
+      width 1469px
+      height 655px
+      margin-left -(@width/2)
+      background url("../img/bg.png") no-repeat top center
+      width 100%
+      background-size cover
+      margin-left 0
+      left 0
+  @media screen and (min-width: 1490px)
+    &:before
+      content ""
+      position absolute
+      left 50%
+      top 0
+      width 1469px
+      height 655px
+      margin-left -(@width/2)
+      background url("../img/bg.png") no-repeat top center
+      background-size initial
+
+.wrapper,
+.main
+  margin 0 auto
+  height 100%
+  padding 0 20px
+  @media screen and (min-width: 975px)
+    width $min-width
+
+.main
+  position relative
+  z-index 40
+
+
+
+

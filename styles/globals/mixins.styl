@@ -1,0 +1,75 @@
+clearfix()
+  &:before
+  &:after
+    content ''
+    display table
+    clear both
+
+anim()
+  transition all 0.25s ease-out
+
+smooth()
+  -webkit-transform translate3d(0, 0, 0)
+  -webkit-backface-visibility hidden
+  -webkit-perspective 1000
+
+//- Fonts
+semibold()
+  font-family 'UniSansSemiBold'
+book()
+  font-family 'UniSansBook'
+heavy()
+  font-family 'UniSansHeavy'
+bold()
+  font-family 'UniSansBold'
+regular()
+  font-family 'UniSansRegular'
+
+
+triangle(width = 10px, height = 10px, direction = 'bottom', color = body-color, negative = transparent)
+
+  // Base triangle styles
+  width 0
+  height 0
+  background 0
+  border-style solid
+
+  // Styles for each direction
+  directions = {
+    top: {
+      border-width: 0 (width * .5) height (width * .5),
+      border-color: negative negative color negative
+    },
+    topRight: {
+      border-width: 0 width height 0,
+      border-color: negative color negative negative
+    },
+    right: {
+      border-width: (height * .5) 0 (height *.5) width,
+      border-color: negative negative negative color
+    },
+    bottomRight: {
+      border-width: 0 0 height width,
+      border-color: negative negative color negative
+    },
+    bottom: {
+      border-width: height (width * .5) 0 (width * .5),
+      border-color: color negative negative negative
+    },
+    bottomLeft: {
+      border-width: width 0 0 height,
+      border-color: negative negative negative color
+    },
+    left: {
+      border-width: (height * .5) width (height * .5) 0,
+      border-color: negative color negative negative
+    },
+    topLeft: {
+      border-width: height width 0 0,
+      border-color: color negative negative negative
+    }
+  }
+
+  // Mixin styles for passed direction
+  styles = directions[direction]
+  {styles}

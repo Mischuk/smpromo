@@ -1,0 +1,158 @@
+.modal-wrap
+  position relative
+  background #fff
+  padding 20px 40px
+  border-radius 10px
+  border 2px solid $orange
+  box-shadow inset 0 0 4px rgba(0,0,0,.5)
+  @media screen and (min-width: 768px)
+    width 452px
+    height 430px
+    margin 0 auto
+    border none
+    background url("../img/modal-bg.png") no-repeat 0 0
+    box-shadow none
+    &.active
+      width 452px
+      height 247px
+      background-image url("../img/modal-bg-active.png")
+      &:before
+        width 226px
+        height 210px
+        background-image url("../img/modal-end.png")
+        right auto
+        top auto
+        left 0
+        bottom 0
+  &:before
+    content ''
+    width 226px
+    height 211px
+    position absolute
+    right 0
+    top 0
+    background url("../img/modal.png") no-repeat 0 0
+  .mfp-close
+    display none
+    @media screen and (min-width: 768px)
+      &.active
+        display block
+        font-size 0
+        width 34px
+        height 35px
+        position absolute
+        left 50%
+        margin-left -17px
+        top auto
+        bottom 20px
+        background url("../img/cloes.png") no-repeat 0 0
+  .headling
+    bold()
+    font-size 24px
+    line-height 1
+    margin-bottom 20px
+    text-align center
+    @media screen and (min-width: 768px)
+      font-size 30px
+      padding-top 20px
+  .small
+    book()
+    font-size 16px
+    line-height 1.2
+    text-align center
+    margin-bottom 10px
+    @media screen and (min-width: 768px)
+      margin-bottom 20px
+  .form-label
+    position relative
+    margin-bottom 10px
+    &:after
+      content ''
+      position absolute
+      right 5px
+      top 50%
+    &.icon-textarea:after
+      background: url('../img/sprite.png') no-repeat -76px -214px;
+      width: 18px;
+      height: 18px;
+      top 5px
+    &.icon-email:after
+      background: url('../img/sprite.png') no-repeat -49px -214px;
+      width: 19px;
+      height: 16px;
+      margin-top -(@height/2)
+    &.icon-tel:after
+      background: url('../img/sprite.png') no-repeat -24px -214px;
+      width: 17px;
+      height: 17px;
+      margin-top -(@height/2)
+    &.icon-name:after
+      background: url('../img/sprite.png') no-repeat 0 -214px;
+      width: 16px;
+      height: 18px;
+      margin-top -(@height/2)
+    textarea, input
+      book()
+      color #666666
+      font-size 18px
+      border 1px solid #757575
+      text-align left
+      padding-left 10px
+      padding-right 10px
+      border-radius 5px
+      &:focus
+        border-color #606060 - 25%
+    input
+      height 36px
+      line-height 36px
+    textarea
+      padding-top 5px
+      padding-bottom 5px
+      min-height 80px
+      line-height 20px
+    .selectize-dropdown
+      overflow hidden
+      border-radius 5px
+      margin-top 5px
+      font-size 18px
+      color #666
+    .selectize-input
+      book()
+      height 36px
+      line-height 36px
+      color #666666
+      font-size 18px
+      border 1px solid #757575
+      text-align left
+      padding-left 10px
+      padding-right 10px
+      border-radius 5px
+      &:after
+        content ""
+        width 20px
+        height 10px
+        position absolute
+        right 10px
+        top 50%
+        margin-top -(@height/2)
+        background url("../img/dropdown.png") no-repeat 0 0
+  .popup_thank_you
+    display none
+    text-align center
+    padding-top 25px
+    padding-bottom 25px
+    h2
+      bold()
+      font-size 24px
+      color $black
+      display block
+      margin-bottom 20px
+      @media screen and (min-width: 768px)
+        font-size 30px
+    p
+      margin-top 0
+      margin-bottom 10px
+      font-size 16px
+      line-height 1.2
+      @media screen and (min-width: 768px)
+        font-size 20px

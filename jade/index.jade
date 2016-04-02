@@ -1,0 +1,281 @@
+doctype html
+html
+  head
+    title Главная
+    include modules/head
+  body
+    // Modal
+    div(class="modal-wrap mfp-hide" id="modal")
+      .main-modal
+        .headling Заказать пакет услуг <span id="package"></span>
+        .small Укажите свои имя и телефон, и мы свяжемся с Вами в ближайшее время.
+        .form-modal
+          form(action="form-modal.php" method='post' class="form")
+              .form-label.icon-name
+                input(type="text" placeholder='Имя' autocomplete="off" name='name' class="form-input" required="required")
+              .form-label.icon-email
+                input(type="email" placeholder='E-mail' autocomplete="off" name='email' class="form-input" required="required")
+              .form-label.icon-tel
+                input(type="tel" placeholder='Телефон' name='tel' class="form-input" required="required")
+              .form-label
+                select(name="select" class="custom-select")
+                  option(value="ВКонтакте" selected) ВКонтакте
+                  option(value="Instagram") Instagram
+                  option(value="YouTube") YouTube
+                  option(value="Facebook") Facebook
+              input(type="hidden" name='input_type' id="package-value")
+              input(type="submit" class="form-submit" value='Заказать услугу')
+      .popup_thank_you
+        h2 Спасибо!
+        p Ваша заявка успешно отправлена!
+        p Мы свяжемся с Вами в ближайшее время.
+    // end Modal
+    .containter
+      header
+        .wrapper
+          .logo
+            a(href="#")
+          .contacts
+            .tel +7 (499) 350-34-89
+            .skype support.smpromo
+      .main
+        .lead-title: h1 Быстрая <br>и безопасная <br>раскрутка <span>вашего аккаунта, страницы или канала!</span>
+        .lead
+          .links
+            a(href="#").vk
+            a(href="#").inst
+            a(href="#").yt
+            a(href="#").fb
+          .description
+            p SMPromo - smm агенство <br class="mobile">нового формата.<br> мы предлагаем эффективное и доступное продвижение<br>в соц. сетях, не навязывая вам длительное обслуживание.
+            p Вы просто выбираете нужные вам пакеты услуг,<br> с фиксированным результатом и сроками.
+        .tabs
+          .triggers
+            a(href="#" id="vk-trigger" class="current") ВКОНТАКТЕ
+            a(href="#" id="instagram-trigger") INSTAGRAM
+            a(href="#" id="youtube-trigger") YOUTUBE
+            a(href="#" id="facebook-trigger") FACEBOOK
+          .content
+            .tab-item.tab-vk
+              h2 Продвижение групп/пабликов ВКонтакте
+              .small Эффективные и доступные пакеты услуг для быстрой раскрутки вашей группы или паблика
+              .choose <span>Выберите подходящий вам тариф:</span>
+              .columns
+                .column
+                  .header
+                    h3 LITE
+                    p 1К вступивших +
+                  ul.list
+                    li 1 000 вступивших
+                    li аудит страницы/группы
+                    li анализ конкурентов
+                    li контент план на 1 месяц
+                  .footer
+                    .price 3 500 р.
+                    .dur срок: 5-10 дней
+                    .order: a(href="#modal" class="modal") Заказать
+                .column
+                  .header
+                    h3 STAR
+                    p 2,5К вступивших +
+                  ul.list
+                    li 2 500 вступивших
+                    li аудит страницы/группы
+                    li анализ конкурентов
+                    li контент-план на 1 месяц
+                    li оформление группы/паблика
+                  .footer
+                    .price 7 750 р.
+                    .dur срок: 10-14 дней
+                    .order: a(href="#modal" class="modal") Заказать
+                .column
+                  .header
+                    h3 PRO
+                    p 5К вступивших +
+                  ul.list
+                    li 5 000 вступивших
+                    li аудит страницы/группы
+                    li анализ конкурентов
+                    li контент план на 1 мес.
+                    li оформление группы/паблика
+                    li соц. фишинг и др. скрипты
+                  .footer
+                    .price 13 500 р.
+                    .dur срок: 15-25 дней
+                    .order: a(href="#modal" class="modal") Заказать
+            .tab-item.tab-instagram(style="display:none;")
+              h2 Продвижение аккаунта в Instagram
+              .small Эффективные и доступные пакеты услуг для быстрой раскрутки вашего аккаунта
+              .choose <span>Выберите подходящий вам тариф:</span>
+              .columns
+                .column
+                  .header
+                    h3 LITE
+                    p 1,5К вступивших +
+                  ul.list
+                    li 1 500 подписчиков
+                    li контент план (30 публикаций)
+                    li подбор целевой аудитории
+                    li 5 000 контактов с ЦА
+                  .footer
+                    .price 4 500 р.
+                    .dur срок: 10-15 дней
+                    .order: a(href="#modal" class="modal") Заказать
+                .column
+                  .header
+                    h3 STAR
+                    p 3К вступивших +
+                  ul.list
+                    li 3 000 подписчиков
+                    li контент-план (60 публикаций)
+                    li подбор целевой аудитории
+                    li 10 000 контактов с ЦА
+                    li оформление (InstaLanding)
+                    li 5 часов консультации
+                  .footer
+                    .price 7 500 р.
+                    .dur срок: 10-15 дней
+                    .order: a(href="#modal" class="modal") Заказать
+                .column
+                  .header
+                    h3 PRO
+                    p 5К вступивших +
+                  ul.list
+                    li 5 000 подписчиков +
+                    li контент план (100 убликаций)
+                    li подбор целевой аудитории
+                    li 15 000 контактов с ЦА
+                    li создание InstaLanding
+                    li персональный менеджер
+                  .footer
+                    .price 12 500 р.
+                    .dur срок: 10-15 дней
+                    .order: a(href="#modal" class="modal") Заказать
+            .tab-item.tab-youtube(style="display:none;")
+              h2 Раскрутка вашего канала на YouTube
+              .small Поможем обрести популярность: увеличим количество просмотров, лайков, подписчиков и комментариев.
+              .choose <span>Выберите подходящий вам тариф:</span>
+              .columns
+                .column
+                  .header
+                    h3 LITE
+                    p продвижение видео
+                  ul.list
+                    li 1 000+ просмотров
+                    li 300+ лайков
+                    li оформление канала
+                  .footer
+                    .price 2 700 р.
+                    .dur срок: 2-5 дней
+                    .order: a(href="#modal" class="modal") Заказать
+                .column
+                  .header
+                    h3 STAR
+                    p раскрутка видео-блога
+                  ul.list
+                    li 1 000+ подписчиков
+                    li 500+ лайков
+                    li 5 000+ просмотров
+                    li оформление канала
+                  .footer
+                    .price 6 500 р.
+                    .dur срок: 7-10 дней
+                    .order: a(href="#modal" class="modal") Заказать
+                .column
+                  .header
+                    h3 PRO
+                    p корпоративный канал
+                  ul.list
+                    li 3 000+ подписчиков
+                    li 1 000+ лайков
+                    li 7 000+ просмотров
+                    li 500+ комментариев
+                    li оформление канала
+                  .footer
+                    .price 12 500 р.
+                    .dur срок: 15-20 дней
+                    .order: a(href="#modal" class="modal") Заказать
+            .tab-item.tab-facebook(style="display:none;")
+              h2 Продвижение аккаунта в Facebook
+              .small Эффективные и доступные пакеты услуг для быстрой раскрутки вашей страницы или группы
+              .choose <span>Выберите подходящий вам тариф:</span>
+              .columns
+                .column
+                  .header
+                    h3 LITE
+                    p 1К подписчиков +
+                  ul.list
+                    li подписчиков - 1 000+
+                    li лайки - 300+
+                    li аудит страницы (контент)
+                    li контент план (30 постов)
+                    li консультация по оформлению, продвижению
+                  .footer
+                    .price 5 700 р.
+                    .dur срок: 7-12 дней
+                    .order: a(href="#modal" class="modal") Заказать
+                .column
+                  .header
+                    h3 BUSINESS
+                    p 2,5К подписчиков
+                  ul.list
+                    li подписчиков - 2 500+
+                    li лайки - 700+
+                    li контент-план (70 постов)
+                    li оформление страницы
+                    li консультации по продвижению - 1 неделя
+                  .footer
+                    .price 8 500 р.
+                    .dur срок: 10-16 дней
+                    .order: a(href="#modal" class="modal") Заказать
+                .column
+                  .header
+                    h3 PRO
+                    p 5К подписчиков +
+                  ul.list
+                    li подписчиков - 5 000+
+                    li лайки - 1 200+
+                    li контент план (150 постов)
+                    li оформление (фирм. стиль)
+                    li консультации по продвижению - 2 недели
+                  .footer
+                    .price 14 700 р.
+                    .dur срок: 14-21 дней
+                    .order: a(href="#modal" class="modal") Заказать
+        .pay.
+          К оплате принимаются: MasterCard, Visa, WebMoney, Qiwi, Яндекс.Деньги<br>
+          Возможна оплата по выставленному счету для юр. лиц (без НДС)
+        .garant
+          h2 Гарантия качественной работы
+          .columns
+            .item.people
+              p <span>Никаких ботов и накруток,</span> только реальные аккаунты
+            .item.star
+              p <span>Безопасное и эффективное</span> продвижение
+            .item.calendar
+              p <span>Быстрый и очевидный</span> результат
+        .lead-form
+          h2 Нужна консультация?
+          p.hide-on-send Укажите интересующие вас вопросы в поле “сообщение”, а так же контактные данные,  и наш менеджер ответит вам в ближайшее время.
+          .form-consult.hide-on-send
+            form(action="form-consult.php" method='post' class="form")
+                .form-label.icon-textarea
+                  textarea(placeholder="Сообщение" name="message" class="form-input")
+                .form-label.icon-name
+                  input(type="text" placeholder='Имя' autocomplete="off" name='name' class="form-input" required="required")
+                .form-label.icon-tel
+                  input(type="tel" placeholder='Телефон' name='tel' class="form-input" required="required")
+                .form-label.icon-email
+                  input(type="email" placeholder='E-mail' autocomplete="off" name='email' class="form-input" required="required")
+                input(type="hidden" name='input_type')
+                input(type="submit" class="form-submit" value='Получить консультацию')
+          .popup_thank_you Спасибо! <br> Запрос отправлен!
+      .footer
+        .wrapper
+          .logo: a(href="#")
+          .contacts
+            .title служба поддержки:
+            .tel +7 (495) 350-34-89
+            .skype support.smpromo
+            .email: a(href="mailto:support@smpromo.ru") support@smpromo.ru
+    include modules/scripts

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Главная</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <!--Styles-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body>
+    <!-- Modal-->
+    <div id="modal" class="modal-wrap mfp-hide">
+      <div class="main-modal">
+        <div class="headling">Заказать пакет услуг <span id="package"></span></div>
+        <div class="small">Укажите свои имя и телефон, и мы свяжемся с Вами в ближайшее время.</div>
+        <div class="form-modal">
+          <form action="form-modal.php" method="post" class="form">
+            <div class="form-label icon-name">
+              <input type="text" placeholder="Имя" autocomplete="off" name="name" required="required" class="form-input">
+            </div>
+            <div class="form-label icon-email">
+              <input type="email" placeholder="E-mail" autocomplete="off" name="email" required="required" class="form-input">
+            </div>
+            <div class="form-label icon-tel">
+              <input type="tel" placeholder="Телефон" name="tel" required="required" class="form-input">
+            </div>
+            <div class="form-label">
+              <select name="select" class="custom-select">
+                <option value="ВКонтакте" selected>ВКонтакте</option>
+                <option value="Instagram">Instagram</option>
+                <option value="YouTube">YouTube</option>
+                <option value="Facebook">Facebook</option>
+              </select>
+            </div>
+            <input type="hidden" name="input_type" id="package-value">
+            <input type="submit" value="Заказать услугу" class="form-submit">
+          </form>
+        </div>
+      </div>
+      <div class="popup_thank_you">
+        <h2>Спасибо!</h2>
+        <p>Ваша заявка успешно отправлена!</p>
+        <p>Мы свяжемся с Вами в ближайшее время.</p>
+      </div>
+    </div>
+    <!-- end Modal-->
+    <div class="containter">
+      <header>
+        <div class="wrapper">
+          <div class="logo"><a href="#"></a></div>
+          <div class="contacts">
+            <div class="tel">+7 (499) 350-34-89</div>
+            <div class="skype">support.smpromo</div>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <div class="lead-title">
+          <h1>Быстрая <br>и безопасная <br>раскрутка <span>вашего аккаунта, страницы или канала!</span></h1>
+        </div>
+        <div class="lead">
+          <div class="links"><a href="#" class="vk"></a><a href="#" class="inst"></a><a href="#" class="yt"></a><a href="#" class="fb"></a></div>
+          <div class="description">
+            <p>SMPromo - smm агенство <br class="mobile">нового формата.<br> мы предлагаем эффективное и доступное продвижение<br>в соц. сетях, не навязывая вам длительное обслуживание.</p>
+            <p>Вы просто выбираете нужные вам пакеты услуг,<br> с фиксированным результатом и сроками.</p>
+          </div>
+        </div>
+        <div class="tabs">
+          <div class="triggers"><a href="#" id="vk-trigger" class="current">ВКОНТАКТЕ</a><a href="#" id="instagram-trigger">INSTAGRAM</a><a href="#" id="youtube-trigger">YOUTUBE</a><a href="#" id="facebook-trigger">FACEBOOK</a></div>
+          <div class="content">
+            <div class="tab-item tab-vk">
+              <h2>Продвижение групп/пабликов ВКонтакте</h2>
+              <div class="small">Эффективные и доступные пакеты услуг для быстрой раскрутки вашей группы или паблика</div>
+              <div class="choose"><span>Выберите подходящий вам тариф:</span></div>
+              <div class="columns">
+                <div class="column">
+                  <div class="header">
+                    <h3>LITE</h3>
+                    <p>1К вступивших +</p>
+                  </div>
+                  <ul class="list">
+                    <li>1 000 вступивших</li>
+                    <li>аудит страницы/группы</li>
+                    <li>анализ конкурентов</li>
+                    <li>контент план на 1 месяц</li>
+                  </ul>
+                  <div class="footer">
+                    <div class="price">3 500 р.</div>
+                    <div class="dur">срок: 5-10 дней</div>
+                    <div class="order"><a href="#modal" class="modal">Заказать</a></div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="header">
+                    <h3>STAR</h3>
+                    <p>2,5К вступивших +</p>
+                  </div>
+                  <ul class="list">
+                    <li>2 500 вступивших</li>
+                    <li>аудит страницы/группы</li>
+                    <li>анализ конкурентов</li>
+                    <li>контент-план на 1 месяц</li>
+                    <li>оформление группы/паблика</li>
+                  </ul>
+                  <div class="footer">
+                    <div class="price">7 750 р.</div>
+                    <div class="dur">срок: 10-14 дней</div>
+                    <div class="order"><a href="#modal" class="modal">Заказать</a></div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="header">
+                    <h3>PRO</h3>
+                    <p>5К вступивших +</p>
+                  </div>
+                  <ul class="list">
+                    <li>5 000 вступивших</li>
+                    <li>аудит страницы/группы</li>
+                    <li>анализ конкурентов</li>
+                    <li>контент план на 1 мес.</li>
+                    <li>оформление группы/паблика</li>
+                    <li>соц. фишинг и др. скрипты</li>
+                  </ul>
+                  <div class="footer">
+                    <div class="price">13 500 р.</div>
+                    <div class="dur">срок: 15-25 дней</div>
+                    <div class="order"><a href="#modal" class="modal">Заказать</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="display:none;" class="tab-item tab-instagram">
+              <h2>Продвижение аккаунта в Instagram</h2>
+              <div class="small">Эффективные и доступные пакеты услуг для быстрой раскрутки вашего аккаунта</div>
+              <div class="choose"><span>Выберите подходящий вам тариф:</span></div>
+              <div class="columns">
+                <div class="column">
+                  <div class="header">
+                    <h3>LITE</h3>
+                    <p>1,5К вступивших +</p>
+                  </div>
+                  <ul class="list">
+                    <li>1 500 подписчиков</li>
+                    <li>контент план (30 публикаций)</li>
+                    <li>подбор целевой аудитории</li>
+                    <li>5 000 контактов с ЦА</li>
+                  </ul>
+                  <div class="footer">
+                    <div class="price">4 500 р.</div>
+                    <div class="dur">срок: 10-15 дней</div>
+                    <div class="order"><a href="#modal" class="modal">Заказать</a></div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="header">
+                    <h3>STAR</h3>
+                    <p>3К вступивших +</p>
+                  </div>
+                  <ul class="list">
+                    <li>3 000 подписчиков</li>
+                    <li>контент-план (60 публикаций)</li>
+                    <li>подбор целевой аудитории</li>
+                    <li>10 000 контактов с ЦА</li>
+                    <li>оформление (InstaLanding)</li>
+                    <li>5 часов консультации</li>
+                  </ul>
+                  <div class="footer">
+                    <div class="price">7 500 р.</div>
+                    <div class="dur">срок: 10-15 дней</div>
+                    <div class="order"><a href="#modal" class="modal">Заказать</a></div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="header">
+                    <h3>PRO</h3>
+                    <p>5К вступивших +</p>
+                  </div>
+                  <ul class="list">
+                    <li>5 000 подписчиков +</li>
+                    <li>контент план (100 убликаций)</li>
+                    <li>подбор целевой аудитории</li>
+                    <li>15 000 контактов с ЦА</li>
+                    <li>создание InstaLanding</li>
+                    <li>персональный менеджер</li>
+                  </ul>
+                  <div class="footer">
+                    <div class="price">12 500 р.</div>
+                    <div class="dur">срок: 10-15 дней</div>
+                    <div class="order"><a href="#modal" class="modal">Заказать</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="display:none;" class="tab-item tab-youtube">
+              <h2>Раскрутка вашего канала на YouTube</h2>
+              <div class="small">Поможем обрести популярность: увеличим количество просмотров, лайков, подписчиков и комментариев.</div>
+              <div class="choose"><span>Выберите подходящий вам тариф:</span></div>
+              <div class="columns">
+                <div class="column">
+                  <div class="header">
+                    <h3>LITE</h3>
+                    <p>продвижение видео</p>
+                  </div>
+                  <ul class="list">
+                    <li>1 000+ просмотров</li>
+                    <li>300+ лайков</li>
+                    <li>оформление канала</li>
+                  </ul>
+                  <div class="footer">
+                    <div class="price">2 700 р.</div>
+                    <div class="dur">срок: 2-5 дней</div>
+                    <div class="order"><a href="#modal" class="modal">Заказать</a></div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="header">
+                    <h3>STAR</h3>
+                    <p>раскрутка видео-блога</p>
+                  </div>
+                  <ul class="list">
+                    <li>1 000+ подписчиков</li>
+                    <li>500+ лайков</li>
+                    <li>5 000+ просмотров</li>
+                    <li>оформление канала</li>
+                  </ul>
+                  <div class="footer">
+                    <div class="price">6 500 р.</div>
+                    <div class="dur">срок: 7-10 дней</div>
+                    <div class="order"><a href="#modal" class="modal">Заказать</a></div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="header">
+                    <h3>PRO</h3>
+                    <p>корпоративный канал</p>
+                  </div>
+                  <ul class="list">
+                    <li>3 000+ подписчиков</li>
+                    <li>1 000+ лайков</li>
+                    <li>7 000+ просмотров</li>
+                    <li>500+ комментариев</li>
+                    <li>оформление канала</li>
+                  </ul>
+                  <div class="footer">
+                    <div class="price">12 500 р.</div>
+                    <div class="dur">срок: 15-20 дней</div>
+                    <div class="order"><a href="#modal" class="modal">Заказать</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="display:none;" class="tab-item tab-facebook">
+              <h2>Продвижение аккаунта в Facebook</h2>
+              <div class="small">Эффективные и доступные пакеты услуг для быстрой раскрутки вашей страницы или группы</div>
+              <div class="choose"><span>Выберите подходящий вам тариф:</span></div>
+              <div class="columns">
+                <div class="column">
+                  <div class="header">
+                    <h3>LITE</h3>
+                    <p>1К подписчиков +</p>
+                  </div>
+                  <ul class="list">
+                    <li>подписчиков - 1 000+</li>
+                    <li>лайки - 300+</li>
+                    <li>аудит страницы (контент)</li>
+                    <li>контент план (30 постов)</li>
+                    <li>консультация по оформлению, продвижению</li>
+                  </ul>
+                  <div class="footer">
+                    <div class="price">5 700 р.</div>
+                    <div class="dur">срок: 7-12 дней</div>
+                    <div class="order"><a href="#modal" class="modal">Заказать</a></div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="header">
+                    <h3>BUSINESS</h3>
+                    <p>2,5К подписчиков</p>
+                  </div>
+                  <ul class="list">
+                    <li>подписчиков - 2 500+</li>
+                    <li>лайки - 700+</li>
+                    <li>контент-план (70 постов)</li>
+                    <li>оформление страницы</li>
+                    <li>консультации по продвижению - 1 неделя</li>
+                  </ul>
+                  <div class="footer">
+                    <div class="price">8 500 р.</div>
+                    <div class="dur">срок: 10-16 дней</div>
+                    <div class="order"><a href="#modal" class="modal">Заказать</a></div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="header">
+                    <h3>PRO</h3>
+                    <p>5К подписчиков +</p>
+                  </div>
+                  <ul class="list">
+                    <li>подписчиков - 5 000+</li>
+                    <li>лайки - 1 200+</li>
+                    <li>контент план (150 постов)</li>
+                    <li>оформление (фирм. стиль)</li>
+                    <li>консультации по продвижению - 2 недели</li>
+                  </ul>
+                  <div class="footer">
+                    <div class="price">14 700 р.</div>
+                    <div class="dur">срок: 14-21 дней</div>
+                    <div class="order"><a href="#modal" class="modal">Заказать</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pay">
+          К оплате принимаются: MasterCard, Visa, WebMoney, Qiwi, Яндекс.Деньги<br>
+          Возможна оплата по выставленному счету для юр. лиц (без НДС)
+        </div>
+        <div class="garant">
+          <h2>Гарантия качественной работы</h2>
+          <div class="columns">
+            <div class="item people">
+              <p><span>Никаких ботов и накруток,</span> только реальные аккаунты</p>
+            </div>
+            <div class="item star">
+              <p><span>Безопасное и эффективное</span> продвижение</p>
+            </div>
+            <div class="item calendar">
+              <p><span>Быстрый и очевидный</span> результат</p>
+            </div>
+          </div>
+        </div>
+        <div class="lead-form">
+          <h2>Нужна консультация?</h2>
+          <p class="hide-on-send">Укажите интересующие вас вопросы в поле “сообщение”, а так же контактные данные,  и наш менеджер ответит вам в ближайшее время.</p>
+          <div class="form-consult hide-on-send">
+            <form action="form-consult.php" method="post" class="form">
+              <div class="form-label icon-textarea">
+                <textarea placeholder="Сообщение" name="message" class="form-input"></textarea>
+              </div>
+              <div class="form-label icon-name">
+                <input type="text" placeholder="Имя" autocomplete="off" name="name" required="required" class="form-input">
+              </div>
+              <div class="form-label icon-tel">
+                <input type="tel" placeholder="Телефон" name="tel" required="required" class="form-input">
+              </div>
+              <div class="form-label icon-email">
+                <input type="email" placeholder="E-mail" autocomplete="off" name="email" required="required" class="form-input">
+              </div>
+              <input type="hidden" name="input_type">
+              <input type="submit" value="Получить консультацию" class="form-submit">
+            </form>
+          </div>
+          <div class="popup_thank_you">Спасибо! <br> Запрос отправлен!</div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="wrapper">
+          <div class="logo"><a href="#"></a></div>
+          <div class="contacts">
+            <div class="title">служба поддержки:</div>
+            <div class="tel">+7 (495) 350-34-89</div>
+            <div class="skype">support.smpromo</div>
+            <div class="email"><a href="mailto:support@smpromo.ru">support@smpromo.ru</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Scripts-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+  </body>
+</html>
